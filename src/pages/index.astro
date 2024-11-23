@@ -1,5 +1,4 @@
 ---
-import { inject } from '@vercel/analytics'
 ---
 
 <html lang="en">
@@ -9,9 +8,6 @@ import { inject } from '@vercel/analytics'
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
-		<script is:inline defer>
-			inject()
-		</script>
 	</head>
 	<body style="display: grid; place-content: center;">
 		<img src="/resizes_logo.jpeg" loading="lazy" alt="Resizes logo">
