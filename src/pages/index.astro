@@ -9,6 +9,10 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+		<script is:inline defer>
+			import { inject } from '@vercel/analytics'
+			inject()
+		</script>
 	</head>
 	<body style="display: grid; place-content: center;">
 		<img src="/resizes_logo.jpeg" loading="lazy" alt="Resizes logo">
