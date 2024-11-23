@@ -1,5 +1,5 @@
 ---
-
+import { inject } from '@vercel/analytics'
 ---
 
 <html lang="en">
@@ -10,7 +10,6 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 		<script is:inline defer>
-			import { inject } from '@vercel/analytics'
 			inject()
 		</script>
 	</head>
